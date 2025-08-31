@@ -13,13 +13,16 @@ body{
     justify-content: center;
     min-height: 100vh;
     background: #ffffff;
+    padding: 1rem;
 }
 
 .container{
-    width: 450px;
+    width: 100%;
+    max-width: 450px;
     background: #fff;
     border-radius: 8px;
     border: #000000 1px solid;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
 }
 
 .container h2{
@@ -101,6 +104,7 @@ body{
 .pass-length .details{
     display: flex;
     justify-content: space-between;
+    font-size: 0.9rem;
 }
 
 .pass-length input{
@@ -113,6 +117,7 @@ body{
     list-style: none;
     flex-wrap: wrap;
     margin-top: 1rem;
+    gap: 0.5rem 0;
 }
 
 .pass-settings .options .option{
@@ -140,6 +145,7 @@ body{
     cursor: pointer;
     color: #4f4f4f;
     padding-left: 0.63rem;
+    font-size: 0.9rem;
 }
 
 .wrapper .generate-btn{
@@ -154,4 +160,23 @@ body{
     border-radius: 5px;
     text-transform: uppercase;
     margin: 0.94rem 0 1.3rem;
+}
+
+@media (max-width: 600px) {
+    .container {
+        border-radius: 6px;
+    }
+    .container h2 {
+        font-size: 1.1rem;
+    }
+    .input-box input {
+        font-size: 0.95rem;
+        height: 48px;
+    }
+    .options .option {
+        width: 100%;
+    }
+    .wrapper {
+        margin: 1rem;
+    }
 }
